@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f4e8;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f9f9f9;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #6c4e00;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .text-section {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .text-section p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin: 0;
+            text-align: justify;
+        }
+
+        .text-section_1 {
+            flex: 1;
+            width: 90%;
+            align-items: center;
+            justify-content: center;
+            margin-left: 80PX;
+        }
+
+        .text-section_1 p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin: 0;
+            text-align: justify;
+        }
+
+        .image-section {
+            flex: 1;
+            min-width: 800px;
+            text-align: center;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .carousel img {
+            width: 130%;
+            height: 600PX;
+            border-radius: 8px;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .carousel button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .carousel button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .carousel .prev {
+            left: 10px;
+        }
+
+        .carousel .next {
+            right: 10px;
+        }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .dots button {
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            border: none;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .dots button.active {
+            background-color: #6c4e00;
+        }
+
+        .container_1 {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-content {
+            flex: 1;
+            width: 50%;
+            text-align: left;
+            padding: 30px;
+            margin-top: -6%;
+            margin-left: -30%;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 15px 0;
+            color: #444;
+        }
+
+        .image-gallery {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .image-gallery img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: rotate(0deg);
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:nth-child(2) {
+            margin-left: 130px;
+            transform: rotate(-10deg);
+        }
+
+        .image-gallery img:nth-child(3) {
+            transform: rotate(10deg);
+        }
+
+        .image-gallery img:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>OUR STORY</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="image-section">
+                <img src="./vanavil/QW.jpeg" alt="Story Image">
+            </div>
+            <div class="text-section">
+                <p>
+                    Variants of communism have been developed throughout history, including anarchist communism, Marxist
+                    schools of thought, and religious communism, among others. Communism encompasses a variety of
+                    schools of thought, which broadly include Marxism, Leninism, and libertarian communism, as well as
+                    the political ideologies grouped around those. All of these different ideologies generally share the
+                    analysis that the current order of society stems from capitalism, its economic system, and mode of
+                    production, that in this system there are two major social classes, that the relationship between
+                    these two classes is exploitative, and that this situation can only ultimately be resolved through a
+                    social revolution,Marxist schools of thought, and religious communism, among others. Communism
+                    encompasses a variety of schools of thought, which broadly include Marxism, Leninism, and
+                    libertarian communism, as well as the political ideologies grouped around those. All of these
+                    different ideologies generally share the analysis that the current order of society stems from
+                    capitalism, its economic system, and mode of production, that in this system there are two major
+                    social classes, that the relationship between these two classes is exploitative, and that this
+                    situation can only ultimately be resolved through a social revolution.
+                </p>
+            </div>
+        </div>
+        <div class="carousel">
+            <button class="prev">&#8592;</button>
+            <img src="./vanavil/QW.jpeg" alt="Carousel Image">
+            <button class="next">&#8594;</button>
+        </div>
+        <div class="dots">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+    </div>
+    <div class="text-section_1">
+        <p>
+            Variants of communism have been developed throughout history, including anarchist communism, Marxist schools
+            of thought, and religious communism, among others. Communism encompasses a variety of schools of thought,
+            which broadly include Marxism, Leninism, and libertarian communism, as well as the political ideologies
+            grouped around those. All of these different ideologies generally share the analysis that the current order
+            of society stems from capitalism, its economic system, and mode of production, that in this system there are
+            two major social classes, that the relationship between these two classes is exploitative, and that this
+            situation can only ultimately be resolved through a social revolution,Marxist schools of thought, and
+            religious communism, among others. Communism encompasses a variety of schools of thought, which broadly
+            include Marxism, Leninism, and libertarian communism, as well as the political ideologies grouped around
+            those. All of these different ideologies generally share the analysis that the current order of society
+            stems from capitalism, its economic system, and mode of production, that in this system there are two major
+            social classes, that the relationship between these two classes is exploitative, and that this situation can
+            only ultimately be resolved through a social revolution.
+            Variants of communism have been developed throughout history, including anarchist communism, Marxist schools
+            of thought, and religious communism, among others. Communism encompasses a variety of schools of thought,
+            which broadly include Marxism, Leninism, and libertarian communism, as well as the political ideologies
+            grouped around those. All of these different ideologies generally share the analysis that the current order
+            of society stems from capitalism, its economic system, and mode of production, that in this system there are
+            two major social classes, that the relationship between these two classes is exploitative, and that this
+            situation can only ultimately be resolved through a social revolution,Marxist schools of thought, and
+            religious communism, among others. Communism encompasses a variety of schools of thought, which broadly
+            include Marxism, Leninism, and libertarian communism, as well as the political ideologies grouped around
+            those. All of these different ideologies generally share the analysis that the current order of society
+            stems from capitalism, its economic system, and mode of production, that in this system there are two major
+            social classes, that the relationship between these two classes is exploitative, and that this situation can
+            only ultimately be resolved through a social revolution.
+        </p>
+    </div>
+    <div class="container_1">
+        <div class="content">
+            <div class="image-gallery">
+                <img src="./vanavil/PAL_4435.JPG" alt="Travel Image 1">
+                <img src="./vanavil/_PAL4592.JPG" alt="Travel Image 2">
+                <img src="https://via.placeholder.com/200" alt="Travel Image 3">
+            </div>
+            <div class="text-content">
+                <p>
+                    We offer a curated selection of tour packages, catering to various travel styles, themes, and
+                    durations.
+                    Variants of communism have been developed throughout history, including anarchist communism, Marxist
+                    schools of thought, and religious communism, among others. Communism encompasses a variety of
+                    schools of thought, which broadly include Marxism, Leninism, and libertarian communism, as well as
+                    the political ideologies grouped around those. All of these different ideologies generally share the
+                    analysis that the current order of society stems from capitalism, its economic system, and mode of
+                    production, that in this system there are two major social classes, that the relationship between
+                    these two classes is exploitative, and that this situation can only ultimately be resolved through a
+                    social revolution,Marxist schools of thought, and religious communism, among others. Communism
+                    encompasses a variety of schools of thought, which broadly include Marxism, Leninism, and
+                    libertarian communism, as well as the political ideologies grouped around those. All of these
+                    different ideologies generally share the analysis that the current order of society stems from
+                    capitalism, its economic system, and mode of production, that in this system there are two major
+                    social classes, that the relationship between these two classes is exploitative, and that this
+                    situation can only ultimately be resolved through a social revolution.
+
+                </p>
+                <p>
+                    These packages are designed to help you discover the world in an unforgettable way, whether you're
+                    looking for a relaxing beach vacation, an adrenaline-pumping adventure, or a cultural immersion
+                    experience.
+                    We offer a curated selection of tour packages, catering to various travel styles, themes, and
+                    durations.
+                    Variants of communism have been developed throughout history, including anarchist communism, Marxist
+                    schools of thought, and religious communism, among others. Communism encompasses a variety of
+                    schools of thought, which broadly include Marxism, Leninism, and libertarian communism, as well as
+                    the political ideologies grouped around those. All of these different ideologies generally share the
+                    analysis that the current order of society stems from capitalism, its economic system, and mode of
+                    production, that in this system there are two major social classes, that the relationship between
+                    these two classes is exploitative, and that this situation can only ultimately be resolved through a
+                    social revolution,Marxist schools of thought, and religious communism, among others. Communism
+                    encompasses a variety of schools of thought, which broadly include Marxism, Leninism, and
+                    libertarian communism, as well as the political ideologies grouped around those. All of these
+                    different ideologies generally share the analysis that the current order of society stems from
+                    capitalism, its economic system, and mode of production, that in this system there are two major
+                    social classes, that the relationship between these two classes is exploitative, and that this
+                    situation can only ultimately be resolved through a social revolution.
+                    Variants of communism have been developed throughout history, including anarchist communism, Marxist
+                    schools of thought, and religious communism, among others. Communism encompasses a variety of
+                    schools of thought, which broadly include Marxism, Leninism, and libertarian communism, as well as
+                    the political ideologies grouped around those. All of these different ideologies generally share the
+                    analysis that the current order of society stems from capitalism, its economic system, and mode of
+                    production, that in this system there are two major social classes, that the relationship between
+                    these two classes is exploitative, and that this situation can only ultimately be resolved through a
+                    social revolution,Marxist schools of thought, and religious communism, among others. Communism
+                    encompasses a variety of schools of thought, which broadly include Marxism, Leninism, and
+                    libertarian communism, as well as the political ideologies grouped around those. All of these
+                    different ideologies generally share the analysis that the current order of society stems from
+                    capitalism, its economic system, and mode of production, that in this system there are two major
+                    social classes, that the relationship between these two classes is exploitative, and that this
+                    situation can only ultimately be resolved through a social revolution.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="text-section_1">
+        <p>
+            Variants of communism have been developed throughout history, including anarchist communism, Marxist schools
+            of thought, and religious communism, among others. Communism encompasses a variety of schools of thought,
+            which broadly include Marxism, Leninism, and libertarian communism, as well as the political ideologies
+            grouped around those. All of these different ideologies generally share the analysis that the current order
+            of society stems from capitalism, its economic system, and mode of production, that in this system there are
+            two major social classes, that the relationship between these two classes is exploitative, and that this
+            situation can only ultimately be resolved through a social revolution,Marxist schools of thought, and
+            religious communism, among others. Communism encompasses a variety of schools of thought, which broadly
+            include Marxism, Leninism, and libertarian communism, as well as the political ideologies grouped around
+            those. All of these different ideologies generally share the analysis that the current order of society
+            stems from capitalism, its economic system, and mode of production, that in this system there are two major
+            social classes, that the relationship between these two classes is exploitative, and that this situation can
+            only ultimately be resolved through a social revolution.
+            Variants of communism have been developed throughout history, including anarchist communism, Marxist schools
+            of thought, and religious communism, among others. Communism encompasses a variety of schools of thought,
+            which broadly include Marxism, Leninism, and libertarian communism, as well as the political ideologies
+            grouped around those. All of these different ideologies generally share the analysis that the current order
+            of society stems from capitalism, its economic system, and mode of production, that in this system there are
+            two major social classes, that the relationship between these two classes is exploitative, and that this
+            situation can only ultimately be resolved through a social revolution,Marxist schools of thought, and
+            religious communism, among others. Communism encompasses a variety of schools of thought, which broadly
+            include Marxism, Leninism, and libertarian communism, as well as the political ideologies grouped around
+            those. All of these different ideologies generally share the analysis that the current order of society
+            stems from capitalism, its economic system, and mode of production, that in this system there are two major
+            social classes, that the relationship between these two classes is exploitative, and that this situation can
+            only ultimately be resolved through a social revolution.
+        </p>
+    </div>
+    <script>
+        const images = [
+            'file:///C:/our_work/Vanavil_Website/vanavil/_PAL4438.JPG',
+            'file:///C:/our_work/Vanavil_Website/vanavil/_PAL4592.JPG',
+            'file:///C:/our_work/Vanavil_Website/vanavil/_PAL4438.JPG'
+        ];
+
+        let currentIndex = 0;
+        const carouselImage = document.querySelector('.carousel img');
+        const prevButton = document.querySelector('.carousel .prev');
+        const nextButton = document.querySelector('.carousel .next');
+        const dots = document.querySelectorAll('.dots button');
+
+        function updateCarousel() {
+            carouselImage.src = images[currentIndex];
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateCarousel();
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateCarousel();
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateCarousel();
+            });
+        });
+
+        updateCarousel();
+    </script>
+</body>
+
+</html>

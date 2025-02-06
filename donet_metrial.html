@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Articles</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .articles {
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: auto;
+        }
+        .line{
+            color: #666;
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: auto;
+            border-bottom: 1px solid gray;
+        }
+        .articles-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .article {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            flex: 1;
+        }
+        .article img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .date {
+            color:orangered;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            border: 1px solid black;
+        }
+        .read-time {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #888;
+        }
+        
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+        }
+        .plan-card {
+            background-color: white;
+            padding: 28px;
+            border-radius: 10px;
+            width: 380px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .plan-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .plan-price {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .p-class {
+            color: orange;
+            font-weight: bold;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            margin: 10px 0;
+        }
+        .checkmark {
+            color: green;
+        }
+        .crossmark {
+            color: red;
+        }
+        .book-btn {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="articles">
+        <h2>See Our Latest Article</h2>
+        <p>Pellentesque maximus augue orci, quis congue purus iaculison id. Maecenas eu lorem quisesdoi massal molestie vulputate in sitagi amet diam. Cras eu odio sit amet.</p>
+        
+        <div class="articles-container">
+            <div class="article">
+                <img src="./vanavil/63.JPG" alt="Pet Adoption">
+                <span class="date">30 Aug 2024</span>
+                <h3>Adopting a Pet: What to Expect and How to Prepare</h3>
+                <p class="line">Lorem ipsum dolor sit amet consectetur. Velit mi vitae dolor curabitur duis sociis. Eget risus.</p>
+                <span class="read-time">7 Min Reads</span>
+            </div>
+            
+            <div class="article highlight">
+                <img src="./vanavil/63.JPG" alt="Pet Nutrition">
+                <span class="date">30 Aug 2024</span>
+                <h3 class="highlight-text">The Importance of Proper Nutrition for your Pets</h3>
+                <p class="line">Lorem ipsum dolor sit amet consectetur. Velit mi vitae dolor curabitur duis sociis. Eget risus.</p>
+                <span class="read-time">7 Min Reads</span>
+            </div>
+            
+            <div class="article">
+                <img src="./vanavil/63.JPG" alt="Pet Activities">
+                <span class="date">30 Aug 2024</span>
+                <h3>Healthy and Fun Activities to Do with Your Pet</h3>
+                <p class="line">Lorem ipsum dolor sit amet consectetur. Velit mi vitae dolor curabitur duis sociis. Eget risus.</p>
+                <span class="read-time">7 Min Reads</span>
+            </div>
+        </div>
+    </section>
+    <h1>Choose Your Perfect Plan</h1>
+    <p class="p-class">Find the best plan that suits your needs.</p>
+    <div class="pricing-container">
+        <div class="plan-card" style="background-color: #e6ccff;">
+            <div class="plan-title">Day Care Regular</div>
+            <div class="plan-price">$190 <span class="p-class">Per Day</span></div>
+            <ul class="feature-list">
+                <li>✔ Socialise Exercise</li>
+                <li>✔ Handscissor Finish</li>
+                <li>✔ Watering Plants</li>
+                <li class="crossmark">✖ Conditioning Treatment</li>
+                <li class="crossmark">✖ Ears Flushed & Cleaned</li>
+            </ul>
+            <button class="book-btn">BOOK NOW</button>
+        </div>
+
+        <div class="plan-card" style="background-color: #ffcccc;">
+            <div class="plan-title">Day Care Standard</div>
+            <div class="plan-price">$290 <span class="p-class">Per Day</span></div>
+            <ul class="feature-list">
+                <li>✔ Socialise Exercise</li>
+                <li>✔ Handscissor Finish</li>
+                <li>✔ Watering Plants</li>
+                <li>✔ Conditioning Treatment</li>
+                <li class="crossmark">✖ Ears Flushed & Cleaned</li>
+            </ul>
+            <button class="book-btn">BOOK NOW</button>
+        </div>
+
+        <div class="plan-card" style="background-color: #ccf2ff;">
+            <div class="plan-title">Day Care Special</div>
+            <div class="plan-price">$390 <span class="p-class">Per Day</span></div>
+            <ul class="feature-list">
+                <li>✔ Socialise Exercise</li>
+                <li>✔ Handscissor Finish</li>
+                <li>✔ Watering Plants</li>
+                <li>✔ Conditioning Treatment</li>
+                <li>✔ Ears Flushed & Cleaned</li>
+            </ul>
+            <button class="book-btn">BOOK NOW</button>
+        </div>
+    </div>
+</body>
+</html>

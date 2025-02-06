@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Tracking Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        header .cta {
+            background-color: #ff9800;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .main-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 50px;
+            background-color: #fff;
+        }
+
+        .main-section .content {
+            max-width: 90%;
+        }
+
+        .main-section .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .main-section .content p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .main-section .content button {
+            padding: 10px 20px;
+            background-color: #ff9800;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .main-section .image {
+            position: relative;
+        }
+
+        .main-section .image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+
+        .feature {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature img {
+            width: 50px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .grid-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .article-card {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .article-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-text h2 {
+            font-size: 1.5rem;
+            line-height: 1.2;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .article-text p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .article-text .meta {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .article-text .tags {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .article-text .tags span {
+            margin-right: 10px;
+        }
+
+        .article-image {
+            position: relative;
+            background-color: #ffe0b3;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .article-meta {
+            font-size: 0.9rem;
+            color: #00a99d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Financialux</div>
+        <nav>
+            <ul>
+                <li><a href="#">Platform</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">How It Works</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#">Get the App</a>
+    </header>
+
+    <section class="main-section">
+        <div class="content">
+            <h1>Financial Tracking Platform</h1>
+            <p>Take your expenses under control with the most advanced financial tracking platform. Explore a 14-day free trial.</p>
+            <button>Try for Free</button>
+        </div>
+        <div class="image">
+            <img src="https://via.placeholder.com/400" alt="Platform Illustration">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <img src="https://via.placeholder.com/50" alt="Feature 1">
+            <h3>1 Million+ Clients</h3>
+            <p>Every month cashback for our clients.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/50" alt="Feature 2">
+            <h3>Subscriptions</h3>
+            <p>Make your money analysis faster and easier.</p>
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/50" alt="Feature 3">
+            <h3>Mobile Application</h3>
+            <p>Store, track expenses, and receive insights instantly.</p>
+        </div>
+    </section>
+    <div class="grid-container">
+      <div class="article-card">
+          <div class="article-text">
+              <h2>Everything has beauty, but not everyone sees it</h2>
+              <div class="meta">Charles Barrett and others — 3 min read</div>
+              <p>
+                  Utilitatis causa amicitia est quaesita. Quae quo sunt excelsiores, eo dant clariora indicia naturae. Sed haec quidem liberius ab eo dicuntur et…
+              </p>
+              <div class="tags">
+                  <span>#story</span> <span>#illustration</span>
+              </div>
+          </div>
+          <div class="article-image">
+              <img src="your-image-url-1.jpg" alt="Article Image">
+          </div>
+      </div>
+      <div class="article-card">
+          <div class="article-text">
+              <h2>Design is a mirror, reflecting the culture</h2>
+              <div class="meta">Victoria West & David Cole — 2 min read</div>
+              <p>
+                  Tertium autem omnibus aut maximis rebus iis, quae secundum naturam sint, fruentem vivere. Materiam vero rerum et copiam apud hos exilem…
+              </p>
+              <div class="tags">
+                  <span>#creative</span> <span>#product</span>
+              </div>
+          </div>
+          <div class="article-image">
+              <img src="your-image-url-2.jpg" alt="Article Image">
+          </div>
+      </div>
+      <div class="article-card">
+          <div class="article-text">
+              <h2>Anyone can hold the helm when the sea is calm</h2>
+              <div class="meta">Megan Anderson & Charles Barrett — 2 min read</div>
+              <p>
+                  Audio equidem philosophi vocem, Epicure, sed quid tibi dicendum sit oblitus es. Haec et tu ita posuisti, et verba vestra sunt…
+              </p>
+              <div class="tags">
+                  <span>#creative</span> <span>#review</span> <span>#story</span>
+              </div>
+          </div>
+          <div class="article-image">
+              <img src="your-image-url-3.jpg" alt="Article Image">
+          </div>
+      </div>
+      <div class="article-card">
+          <div class="article-text">
+              <h2>Being unique is better than being perfect</h2>
+              <div class="meta">Megan Anderson — 2 min read</div>
+              <p>
+                  Quae in controversiam veniunt, de iis, si placet, disseramus. Iam quae corporis sunt, ea nec auctoritatem cum animi partibus…
+              </p>
+              <div class="tags">
+                  <span>#review</span> <span>#story</span>
+              </div>
+          </div>
+          <div class="article-image">
+              <img src="./vanavil/61.JPG" alt="Article Image">
+          </div>
+      </div>
+  </div>
+</body>
+</html>
